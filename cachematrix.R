@@ -26,7 +26,7 @@ makeCacheMatrix <- function(x = matrix()) {
              getinv = getinv)
 }
 
-# I use the above function by assigning the expressed list to another object, called l.
+# I use the above function by assigning the expressed list to another object, called l
 # i.e. > l <- makeCacheMatrix()
 # l$set(y) gives the matrix y to the set element of l
 # y is then assigned to x, i.e. to the argument of makeCacheMatrix, which enables the get function (lines 19, 21)
@@ -34,8 +34,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ### Description of cacheSolve
 ## cacheSolve checks if im for matrix y is already calculated.
-## If no, it calculates im and prints it
-## If yes, it assigns the inverted matrix to im and prints the message (line 43) and returns im 
+## If no, it calculates im and prints it.
+## If yes, it assigns the inverted matrix to im and prints the message (line 43) and returns im.
 
 cacheSolve <- function(l, ...) {
         im <- l$getinv()
@@ -53,7 +53,7 @@ cacheSolve <- function(l, ...) {
         im
 }
 
-## Return a matrix that is the inverse of x (line 32; i.e. the matrix that was originally called y)
+## Return a matrix that is the inverse of x (line 32; i.e. the matrix that was originally called y).
 
-## I hope to have illustrated the interplay between these two functions clearly
+## I hope to have illustrated the interplay between these two functions clearly.
 ## Good day!
